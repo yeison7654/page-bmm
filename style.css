@@ -1,3 +1,11 @@
+/*
+#5499c7
+#2980b9
+#2471a3
+#1f618d
+#1a5276
+#154360
+*/
 * {
     font-family: "Ubuntu Sans", sans-serif;
     padding: 0;
@@ -12,14 +20,20 @@ html {
     font-size: 17px;
 }
 
+.hidden {
+    display: none !important;
+}
+
+/*Estilo de menu bar de opciones y navegacion*/
 .menu-bar {
     background: #154360;
     box-shadow: 0 0.2rem 0.3rem black;
     color: whitesmoke;
     width: 100%;
+    position: fixed;
 }
 
-.menu-bar>nav {
+.menu-bar>.menu-nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -62,17 +76,56 @@ html {
     background: #1f618d;
 }
 
-/*
-#5499c7
-#2980b9
-#2471a3
-#1f618d
-#1a5276
-#154360
-*/
+/*Fin de estilos de menu bar de navegacion*/
+
+/*Estilo del componente de menu nav de contactos*/
+.menu-bar>.menu-nav-contact {
+    background: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+.menu-bar>.menu-nav-contact ul {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.menu-nav-contact>.contact li a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.menu-nav-contact>.social li a>i {
+    background: #154360;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+    border-radius: 100%;
+    transition: all 0.9ms ease;
+}
+
+.menu-nav-contact>.social li a>i:hover {
+    background: #1f618d;
+}
+
+/*Fin de estilos menu nav contactos*/
+
+/*Estilos celular*/
 @media (max-width: 768px) {
-    .hidden {
-        display: none;
+    .s-hidden {
+        display: none !important;
     }
 
     /* Estilos para tabletas y dispositivos móviles */
@@ -84,7 +137,7 @@ html {
         display: none;
     }
 
-    .menu-bar>nav {
+    .menu-bar>.menu-nav {
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
@@ -118,6 +171,7 @@ html {
     }
 }
 
+/*estilos pantalla media*/
 @media (min-width: 769px) and (max-width: 1024px) {
 
     /* Estilos para pantallas de tamaño medio */
@@ -132,6 +186,7 @@ html {
     .section-search {
         display: none;
     }
+
     .section-options {
         display: flex;
         flex-direction: row;
@@ -142,6 +197,7 @@ html {
     }
 }
 
+/*estilo pantall grandes*/
 @media (min-width: 1025px) {
 
     /* Estilos para pantallas grandes */
@@ -152,13 +208,18 @@ html {
     .btn-oc {
         display: none;
     }
+
     .section-options {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
         gap: 0.2rem;
-        padding: 0.4rem 2.2rem;
+        padding: 0.4rem 9rem 0.4rem 2.2rem;
+    }
+
+    .section-empresa {
+        padding: 0.4rem 2.2rem 0.4rem 9rem;
     }
 
     .section-search {
