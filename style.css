@@ -96,12 +96,13 @@ html {
     gap: 1.2rem;
 }
 
-.menu-nav-contact>.contact li a {
+.menu-nav-contact>.contact li>a {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
+    color: #154360;
 }
 
 .menu-nav-contact>.social li a>i {
@@ -197,7 +198,7 @@ html {
     }
 }
 
-/*estilo pantall grandes*/
+/*estilo pantalla grandes*/
 @media (min-width: 1025px) {
 
     /* Estilos para pantallas grandes */
