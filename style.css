@@ -178,23 +178,48 @@ html {
     height: 2rem;
     background: #154360;
     border-radius: 100%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   box-shadow: 0.2rem 0.2rem 0.1rem black;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0.2rem 0.2rem 0.1rem black;
 }
-.float-up:hover{
+
+.float-up:hover {
     background: #1f618d;
-   box-shadow: 0.3rem 0.3rem 0.1rem black;   
+    box-shadow: 0.3rem 0.3rem 0.1rem black;
 }
-.float-up>a>i{
+
+.float-up>a>i {
     color: whitesmoke;
     font-size: 1.2rem;
 }
 
-
 /*end float*/
+/*footer page*/
+.footer-main {
+    width: 100%;
+    background: #1f618d; 
+    padding-top: 3rem;
+}
+.footer-main>.footer-pie ,.footer-content{
+    padding-right: 10rem;
+    padding-left: 10rem;
+}
 
+.footer-main>.footer-pie {
+    background: #154360;
+    text-align: center;
+    color: whitesmoke;
+    padding: 0.5rem 0;  
+}
+
+.footer-main>.footer-content>.foot-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+/*end footer page*/
 /*Estilos celular*/
 @media (max-width: 768px) {
     .s-hidden {
