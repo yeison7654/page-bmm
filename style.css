@@ -38,6 +38,8 @@ html {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
 }
 
 .section-empresa {
@@ -87,8 +89,6 @@ html {
     align-items: center;
     padding-top: 0.1rem;
     padding-bottom: 0.1rem;
-    padding-left: 10rem;
-    padding-right: 10rem;
 }
 
 .menu-bar>.menu-nav-contact ul {
@@ -103,6 +103,10 @@ html {
     justify-content: center;
     gap: 0.5rem;
     color: #154360;
+}
+
+.menu-nav-contact>.contact li>a:hover {
+    color: #2471a3;
 }
 
 .menu-nav-contact>.social li a>i {
@@ -170,6 +174,11 @@ html {
         background: #1f618d;
         cursor: pointer;
     }
+
+    /*ocultando menu contactos*/
+    .menu-bar>.menu-nav-contact {
+        display: none;
+    }
 }
 
 /*estilos pantalla media*/
@@ -195,6 +204,12 @@ html {
         align-items: center;
         gap: 0.2rem;
         padding: 0.4rem 2.2rem;
+    }
+
+    /*padding menu nav contact*/
+    .menu-bar>.menu-nav-contact {
+        padding-left: 2.2rem;
+        padding-right: 2.2rem;
     }
 }
 
@@ -270,5 +285,11 @@ html {
 
     .btn-search:hover {
         background: #1f618d;
+    }
+
+    /*padding menu nav contact*/
+    .menu-bar>.menu-nav-contact {
+        padding-left: 10rem;
+        padding-right: 10rem;
     }
 }

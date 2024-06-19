@@ -11,10 +11,10 @@ function btnMenu() {
     let so = document.querySelector(".section-options");
     btnOpenClose.addEventListener("click", (e) => {
         e.preventDefault();
-        if (so.classList.contains("hidden")) {
-            so.classList.remove("hidden")
+        if (so.classList.contains("s-hidden")) {
+            so.classList.remove("s-hidden")
         } else {
-            so.classList.add("hidden")
+            so.classList.add("s-hidden")
         }
     })
 }
