@@ -25,8 +25,10 @@ function navScroll() {
         if (scrolly > 14
         ) {
             document.querySelector(".menu-nav-contact").classList.add("hidden");
+            document.querySelector(".float-up").classList.remove("hidden");
         } else if (scrolly < 15) {
             document.querySelector(".menu-nav-contact").classList.remove("hidden");
+            document.querySelector(".float-up").classList.add("hidden");
         }
     });
 }
