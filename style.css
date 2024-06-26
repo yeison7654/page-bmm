@@ -129,7 +129,7 @@ html {
 /*Fin de estilos menu nav contactos*/
 /*Elemento botones de redes sociales flotantes*/
 .container-float-social {
-    width: 3.5rem;
+    width: 3rem;
     height: auto;
     position: fixed;
     bottom: 1rem;
@@ -144,7 +144,7 @@ html {
 
 .social-item {
     width: 100%;
-    height: 3.5rem;
+    height: 3rem;
     background: #154360;
     border-radius: 100%;
     display: flex;
@@ -198,10 +198,12 @@ html {
 /*footer page*/
 .footer-main {
     width: 100%;
-    background: #1f618d; 
+    background: #1f618d;
     padding-top: 3rem;
 }
-.footer-main>.footer-pie ,.footer-content{
+
+.footer-main>.footer-pie,
+.footer-content {
     padding-right: 10rem;
     padding-left: 10rem;
 }
@@ -210,15 +212,36 @@ html {
     background: #154360;
     text-align: center;
     color: whitesmoke;
-    padding: 0.5rem 0;  
+    padding: 0.5rem 0;
 }
 
 .footer-main>.footer-content>.foot-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
 }
-
+.footer-content {
+    padding-bottom: 1rem;
+}
+.grid-item>.foot-title{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: whitesmoke;
+    margin-bottom: 1rem;
+}
+.grid-item>.foot-text{
+    font-size: 0.9rem;
+    color: whitesmoke;
+    margin-bottom: 0.5rem;
+}
+.grid-item>.foot-list .list-item{
+    color: whitesmoke;
+    margin-bottom: 0.5rem;
+}
+.grid-item>.foot-list .list-item>a{
+    color: whitesmoke;
+}
+.list-item:hover{
+    text-decoration: underline;
+}
 /*end footer page*/
 /*Estilos celular*/
 @media (max-width: 768px) {
@@ -272,6 +295,17 @@ html {
     .menu-bar>.menu-nav-contact {
         display: none;
     }
+
+    /*Footer page*/
+    .footer-pie>p {
+        padding: 0.8rem;
+        font-size: 0.7rem;
+    }
+
+    .footer-main>.footer-content>.foot-grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+    }
 }
 
 /*estilos pantalla media*/
@@ -304,6 +338,13 @@ html {
         padding-left: 2.2rem;
         padding-right: 2.2rem;
     }
+
+    /*grid de 2 footer page*/
+    .footer-main>.footer-content>.foot-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
 }
 
 /*estilo pantalla grandes*/
@@ -384,5 +425,14 @@ html {
     .menu-bar>.menu-nav-contact {
         padding-left: 10rem;
         padding-right: 10rem;
+    }
+
+    /*Footer pie grid*/
+    .footer-main>.footer-content>.foot-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+    }
+    .footer-pie>p {
+        font-size: 0.85rem;
     }
 }
