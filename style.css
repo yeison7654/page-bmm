@@ -25,6 +25,43 @@ html {
     display: none !important;
 }
 
+/*pagina de load*/
+.load-page {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background: rgba(21, 67, 96, 0.6);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.load-page>p {
+    font-size: 3rem;
+    color: whitesmoke;
+    font-weight: bold;
+    animation: colorChange 1s infinite;
+}
+
+@keyframes colorChange {
+    0% {
+        color: whitesmoke;
+        font-size: 4rem;
+    }
+
+    50% {
+        color: #11a246;
+        font-size: 2rem;
+    }
+
+    100% {
+        color: #006AFF;
+        font-size: 4rem;
+    }
+}
+
 /*Estilo de menu bar de opciones y navegacion*/
 .menu-bar {
     background: #154360;
@@ -203,7 +240,8 @@ html {
 }
 
 .footer-main>.footer-pie,
-.footer-content {
+.footer-content,
+.footer-social {
     padding-right: 10rem;
     padding-left: 10rem;
 }
@@ -218,30 +256,86 @@ html {
 .footer-main>.footer-content>.foot-grid {
     display: grid;
 }
+
 .footer-content {
     padding-bottom: 1rem;
 }
-.grid-item>.foot-title{
+
+.grid-item>.foot-title {
     font-size: 1.2rem;
     font-weight: bold;
     color: whitesmoke;
     margin-bottom: 1rem;
 }
-.grid-item>.foot-text{
+
+.grid-item>.foot-text {
     font-size: 0.9rem;
     color: whitesmoke;
     margin-bottom: 0.5rem;
 }
-.grid-item>.foot-list .list-item{
+
+.grid-item>.foot-list .list-item {
     color: whitesmoke;
     margin-bottom: 0.5rem;
 }
-.grid-item>.foot-list .list-item>a{
+
+.grid-item>.foot-list .list-item>a {
     color: whitesmoke;
 }
-.list-item:hover{
+
+.list-item:hover {
     text-decoration: underline;
 }
+
+/*form foot suscribete*/
+.foot-form-suscribe {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.foot-form-suscribe>input,
+button {
+    margin: none;
+    padding: none;
+    border: none;
+    outline: none;
+}
+
+.foot-form-suscribe>input {
+    width: 100%;
+    padding: 0.2rem 1rem;
+}
+
+.foot-form-suscribe>button {
+    padding: 0.5rem 1rem;
+    background: #11a246;
+    cursor: pointer;
+    color: whitesmoke;
+}
+
+.foot-form-suscribe>button:hover {
+    background: #25d366;
+}
+
+/*footer social*/
+.footer-social>.foot-social-list {
+    display: flex;
+    gap: 2rem;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-top: 1.2rem;
+    margin-top: 0.5rem;
+    border-top: whitesmoke 0.01rem solid;
+}
+
+.footer-social>.foot-social-list li>a {
+    color: whitesmoke;
+}
+
 /*end footer page*/
 /*Estilos celular*/
 @media (max-width: 768px) {
@@ -296,6 +390,14 @@ html {
         display: none;
     }
 
+    /*Padding footer sections*/
+    .footer-main>.footer-pie,
+    .footer-content,
+    .footer-social {
+        padding-right: 2.2rem;
+        padding-left: 2.2rem;
+    }
+
     /*Footer page*/
     .footer-pie>p {
         padding: 0.8rem;
@@ -337,6 +439,14 @@ html {
     .menu-bar>.menu-nav-contact {
         padding-left: 2.2rem;
         padding-right: 2.2rem;
+    }
+
+    /*Padding footer sections*/
+    .footer-main>.footer-pie,
+    .footer-content,
+    .footer-social {
+        padding-right: 2.2rem;
+        padding-left: 2.2rem;
     }
 
     /*grid de 2 footer page*/
@@ -432,6 +542,7 @@ html {
         grid-template-columns: repeat(4, 1fr);
         gap: 2rem;
     }
+
     .footer-pie>p {
         font-size: 0.85rem;
     }

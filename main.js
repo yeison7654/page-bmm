@@ -1,8 +1,11 @@
+let pageLoad = document.querySelector(".load-page");
 /**ejecutar funciones despues de cargar la pagina web **/
 document.addEventListener("DOMContentLoaded", () => {
     setTimeout(() => {
         btnMenu()
         navScroll()
+        /**oculta pantalla de carga */
+       // pageLoad.classList.add("hidden")
     }, 1000);
 })
 /**Funcion de carga de menu en el modo responsivo **/
