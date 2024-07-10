@@ -1,11 +1,19 @@
-/*
-#5499c7
-#2980b9
-#2471a3
-#1f618d
-#1a5276
-#154360
-*/
+:root {
+    --primary-color: #154360;
+    --secondary-color: #1a5276;
+    --tertiary-color: #1f618d;
+    --quatiary-color: #2471a3;
+    --quintiary-color: #2980b9;
+    --sextiary-color: #5499c7;
+    --success-color: #11a246;
+    --success-color-2: #25d366;
+    --dannger-color: red;
+    --info-color: blue;
+    --black-color: black;
+    --white-color: white;
+    --font-size: 17px;
+}
+
 * {
     font-family: "Ubuntu Sans", sans-serif;
     padding: 0;
@@ -17,7 +25,7 @@
 }
 
 html {
-    font-size: 17px;
+    font-size: var(--font-size);
     scroll-behavior: smooth;
 }
 
@@ -40,7 +48,7 @@ html {
 
 .load-page>p {
     font-size: 1.4rem;
-    color: #154360;
+    color: var(--primary-color);
     margin-top: 1.5rem;
 }
 
@@ -48,7 +56,7 @@ html {
     width: 4rem;
     height: 4rem;
     border: 0.6rem solid rgba(0, 0, 0, 0.1);
-    border-top: 0.6rem solid #1f618d;
+    border-top: 0.6rem solid var(--tertiary-color);
     border-radius: 50%;
     animation: spin 1s linear infinite;
 }
@@ -66,7 +74,7 @@ html {
 
 /*Estilo de menu bar de opciones y navegacion*/
 .menu-bar {
-    background: #154360;
+    background: var(--primary-color);
     box-shadow: 0 0.2rem 0.3rem black;
     color: whitesmoke;
     width: 100%;
@@ -116,7 +124,7 @@ html {
 }
 
 .section-item:hover {
-    background: #1f618d;
+    background: var(--tertiary-color);
 }
 
 /*Fin de estilos de menu bar de navegacion*/
@@ -143,15 +151,15 @@ html {
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
-    color: #154360;
+    color: var(--primary-color);
 }
 
 .menu-nav-contact>.contact li>a:hover {
-    color: #2471a3;
+    color: var(--quatiary-color);
 }
 
 .menu-nav-contact>.social li a>i {
-    background: #154360;
+    background: var(--primary-color);
     width: 1.5rem;
     height: 1.5rem;
     display: flex;
@@ -163,7 +171,7 @@ html {
 }
 
 .menu-nav-contact>.social li a>i:hover {
-    background: #1f618d;
+    background: var(--tertiary-color);
 }
 
 /*Fin de estilos menu nav contactos*/
@@ -186,7 +194,7 @@ html {
 .social-item {
     width: 100%;
     height: 3rem;
-    background: #154360;
+    background: var(--primary-color);
     border-radius: 100%;
     display: flex;
     justify-content: center;
@@ -206,7 +214,7 @@ html {
 }
 
 .live-chat {
-    background: #2471a3;
+    background: var(--quatiary-color);
 }
 
 /*Fin de flotantes*/
@@ -217,7 +225,7 @@ html {
     right: 2rem;
     width: 2rem;
     height: 2rem;
-    background: #154360;
+    background: var(--primary-color);
     border-radius: 100%;
     display: flex;
     justify-content: center;
@@ -227,7 +235,7 @@ html {
 }
 
 .float-up:hover {
-    background: #1f618d;
+    background: var(--tertiary-color);
     box-shadow: 0.3rem 0.3rem 0.1rem black;
 }
 
@@ -240,7 +248,7 @@ html {
 /*footer page*/
 .footer-main {
     width: 100%;
-    background: #1f618d;
+    background: var(--tertiary-color);
     padding-top: 3rem;
 }
 
@@ -252,7 +260,7 @@ html {
 }
 
 .footer-main>.footer-pie {
-    background: #154360;
+    background: var(--primary-color);
     text-align: center;
     color: whitesmoke;
     padding: 0.5rem 0;
@@ -315,13 +323,13 @@ button {
 
 .foot-form-suscribe>button {
     padding: 0.5rem 1rem;
-    background: #11a246;
+    background: var(--success-color);
     cursor: pointer;
     color: whitesmoke;
 }
 
 .foot-form-suscribe>button:hover {
-    background: #25d366;
+    background: var(--success-color-2);
 }
 
 /*footer social*/
@@ -403,7 +411,7 @@ button {
     }
 
     .section-item:hover {
-        background: #1f618d;
+        background: var(--tertiary-color);
         cursor: pointer;
     }
 
@@ -548,7 +556,7 @@ button {
         width: 3rem;
         border: none;
         outline: none;
-        background: #1a5276;
+        background: var(--secondary-color);
         border-top-right-radius: 1rem;
         border-bottom-right-radius: 1rem;
         cursor: pointer;
@@ -565,7 +573,7 @@ button {
     }
 
     .btn-search:hover {
-        background: #1f618d;
+        background: var(--tertiary-color);
     }
 
     /*padding menu nav contact*/
