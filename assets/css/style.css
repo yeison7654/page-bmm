@@ -388,19 +388,7 @@ button {
     flex-direction: row;
 }
 
-.form-head {
-    background: var(--primary-color);
-    border-top-left-radius: 1.5rem;
-    border-bottom-left-radius: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-}
+
 
 .form-head>h1,
 a,
@@ -409,13 +397,7 @@ h2 {
     color: var(--white-color);
 }
 
-.form-head>h1 {
-    margin-bottom: 3rem;
-}
 
-.form-head>a {
-    margin-bottom: 1rem;
-}
 
 .form-content {
     width: 100%;
@@ -546,6 +528,36 @@ textarea {
     .owl-carousel .item {
         height: 14rem !important;
     }
+
+    /*form contacto*/
+    .section-form-contact {
+        padding-left: 2.2rem;
+        padding-right: 2.2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .contact-flex {
+        flex-direction: column;
+    }
+
+    .form-head {
+        background: var(--primary-color);
+        border-top-left-radius: 1.5rem;
+        border-top-right-radius: 1.5rem;
+        text-align: center;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .form-head>h1 {
+        margin-bottom: 2rem;
+    }
+
+    .form-head>a {
+        margin-bottom: 0.5rem;
+    }
 }
 
 /*estilos pantalla media*/
@@ -596,6 +608,34 @@ textarea {
     /*medidas de los items*/
     .owl-carousel .item {
         height: 26rem !important;
+    }
+
+    /*componente de formulario de contacto*/
+    .section-form-contact {
+        padding-left: 2.2rem;
+        padding-right: 2.2rem;
+        margin-bottom: 1.5rem;
+    }
+    .form-head {
+        background: var(--primary-color);
+        border-top-left-radius: 1.5rem;
+        border-bottom-left-radius: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    .form-head>h1 {
+        margin-bottom: 3rem;
+    }
+
+    .form-head>a {
+        margin-bottom: 1rem;
     }
 
 }
@@ -688,5 +728,28 @@ textarea {
 
     .footer-pie>p {
         font-size: 0.85rem;
+    }
+
+    /*componente de formulario contacto*/
+    .form-head {
+        background: var(--primary-color);
+        border-top-left-radius: 1.5rem;
+        border-bottom-left-radius: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    .form-head>h1 {
+        margin-bottom: 3rem;
+    }
+
+    .form-head>a {
+        margin-bottom: 1rem;
     }
 }
