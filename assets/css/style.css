@@ -446,7 +446,70 @@ textarea {
 }
 
 /*end formulario contacto*/
+/*seccion servicios*/
+.section-our-services {
+    margin-bottom: 3rem;
+}
 
+.section-our-services>div>.title-head {
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-our-services>div>.title-head>.title {
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--black-color);
+    margin-bottom: 1.5rem;
+}
+
+.section-our-services>div>div>.title-bar {
+    padding: 0.1rem;
+    width: 5rem;
+    background: var(--primary-color);
+    border-radius: 1rem;
+}
+
+.list-services {
+    display: grid;
+}
+
+.item-services {
+    border-top: var(--primary-color) solid 0.3rem;
+    padding-top: 0.8rem;
+    padding-left: 0.5rem;
+    padding-bottom: 0.9rem;
+    padding-right: 0.5rem;
+    box-shadow: 0 0.01rem 0.2rem var(--black-color);
+    border-radius: 1rem;
+}
+
+.item-services>i {
+    border: var(--primary-color) solid 0.1rem;
+    border-radius: 1rem;
+    width: 4rem;
+    height: 4rem;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.7rem;
+}
+
+.item-services>.title {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: var(--black-color);
+}
+
+.item-services>.text {
+    color: var(--black-color);
+}
+
+/*end servicios*/
 /*Estilos celular*/
 @media (max-width: 768px) {
     .s-hidden {
@@ -501,6 +564,8 @@ textarea {
     }
 
     /*Padding footer sections*/
+    .section-form-contact,
+    .section-our-services,
     .footer-main>.footer-pie,
     .footer-content,
     .footer-social {
@@ -531,8 +596,6 @@ textarea {
 
     /*form contacto*/
     .section-form-contact {
-        padding-left: 2.2rem;
-        padding-right: 2.2rem;
         margin-bottom: 1.5rem;
     }
 
@@ -557,6 +620,12 @@ textarea {
 
     .form-head>a {
         margin-bottom: 0.5rem;
+    }
+
+    /*responsive section servicios*/
+    .list-services {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
     }
 }
 
@@ -592,6 +661,8 @@ textarea {
     }
 
     /*Padding footer sections*/
+    .section-form-contact,
+    .section-our-services,
     .footer-main>.footer-pie,
     .footer-content,
     .footer-social {
@@ -612,10 +683,9 @@ textarea {
 
     /*componente de formulario de contacto*/
     .section-form-contact {
-        padding-left: 2.2rem;
-        padding-right: 2.2rem;
         margin-bottom: 1.5rem;
     }
+
     .form-head {
         background: var(--primary-color);
         border-top-left-radius: 1.5rem;
@@ -638,15 +708,17 @@ textarea {
         margin-bottom: 1rem;
     }
 
+    /*responsive section servicios*/
+    .list-services {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
 }
 
 /*estilo pantalla grandes*/
 @media (min-width: 1025px) {
 
     /* Estilos para pantallas grandes */
-    body {
-        background: red;
-    }
 
     .btn-oc {
         display: none;
@@ -751,5 +823,16 @@ textarea {
 
     .form-head>a {
         margin-bottom: 1rem;
+    }
+
+    /*responsive section servicios*/
+    .section-our-services {
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+
+    .list-services {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
     }
 }
