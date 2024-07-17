@@ -379,7 +379,7 @@ button {
     width: 100%;
     background: var(--white-color);
     border-radius: 1.5rem;
-    box-shadow: 0.1rem 0.5rem 0.3rem var(--black-color);
+    box-shadow: 0.1rem 0.5rem 0.3rem var(--gray-color);
 }
 
 .contact-flex {
@@ -482,7 +482,7 @@ textarea {
     padding-left: 0.5rem;
     padding-bottom: 0.9rem;
     padding-right: 0.5rem;
-    box-shadow: 0 0.01rem 0.2rem var(--black-color);
+    box-shadow: 0 0.01rem 0.2rem var(--gray-color);
     border-radius: 1rem;
 }
 
@@ -502,14 +502,82 @@ textarea {
     font-size: 1.2rem;
     font-weight: 500;
     margin-bottom: 0.5rem;
-    color: var(--black-color);
+    color: var(--primary-color);
 }
 
 .item-services>.text {
-    color: var(--black-color);
+    color: var(--secondary-color);
 }
 
 /*end servicios*/
+/*seccion nosotros*/
+.section-our {
+    margin-bottom: 5rem;
+}
+
+.section-our-margins {
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+.our-head {
+    background: url("../img/fondo-our.jpg") no-repeat center;
+    width: 100%;
+    height: 37rem;
+}
+
+.our-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    background: var(--white-color);
+}
+
+.our {
+    border-top: var(--primary-color) solid 1rem;
+    border-radius: 1rem;
+    padding-top: 2.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 1.5rem;
+    margin-top: -8rem;
+    box-shadow: -0.2rem 0.1rem 0.6rem var(--gray-color);
+}
+
+.our-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0.8rem;
+}
+
+.our-item>i {
+    background: var(--gray-color);
+    color: var(--white-color);
+    font-size: 2rem;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.our-item>.title {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.our-item>.text {
+    color: var(--secondary-color);
+}
+
+/*fin nosotros*/
 /*Estilos celular*/
 @media (max-width: 768px) {
     .s-hidden {
